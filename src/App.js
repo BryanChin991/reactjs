@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import ErrorExample from './tutorial/1-useState/1-error-example'
+import UseStateArray from './tutorial/1-useState/UseStateArray'
+import UseStateObject from './tutorial/1-useState/UseStateObject'
+import UseStateCounter from './tutorial/1-useState/UseStateCounter'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+        <div className='container'>
+            <h1 style={{textAlign:'center', letterSpacing:'2rem'}}>Advance React</h1>
+            <hr/>
+            <ErrorExample/>
+            <hr/>
+            <UseStateArray />
+            <hr/>
+            <UseStateObject />
+            <hr/>
+            <UseStateCounter />
+        </div>
+    )
 }
 
-export default App;
+export default App
